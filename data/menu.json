@@ -1,0 +1,281 @@
+[
+  {
+    "id": "spa-rognon",
+    "name": "Spaghetti rognon",
+    "category": "Spaghetti",
+    "price": 600,
+    "description": "Spaghetti préparés avec du rognon tendre.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "tag": "Populaire",
+    "active": true
+  },
+  {
+    "id": "spa-foie",
+    "name": "Spaghetti foie",
+    "category": "Spaghetti",
+    "price": 600,
+    "description": "Spaghetti préparés avec du foie savoureux.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "spa-viande",
+    "name": "Spaghetti viande",
+    "category": "Spaghetti",
+    "price": 800,
+    "description": "Spaghetti avec viande hachée épicée.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "spa-rognon-oeuf",
+    "name": "Spaghetti rognon + œuf",
+    "category": "Spaghetti",
+    "price": 700,
+    "description": "Spaghetti au rognon avec œuf grillé.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "tag": "Top",
+    "active": true
+  },
+  {
+    "id": "spa-foie-oeuf",
+    "name": "Spaghetti foie + œuf",
+    "category": "Spaghetti",
+    "price": 700,
+    "description": "Spaghetti au foie accompagnés d’un œuf grillé.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "saute-foie",
+    "name": "Sauté de foie",
+    "category": "Spaghetti",
+    "price": 1500,
+    "description": "Foie sauté et revenu aux épices.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "saute-rognon",
+    "name": "Sauté de rognon",
+    "category": "Spaghetti",
+    "price": 1500,
+    "description": "Rognon sauté pour une assiette généreuse.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "saute-viande",
+    "name": "Sauté de viande",
+    "category": "Spaghetti",
+    "price": 1500,
+    "description": "Viande revenue aux épices.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "petit-pois-rognon",
+    "name": "Petit pois rognon",
+    "category": "Spaghetti",
+    "price": 1000,
+    "description": "Petit pois accompagné de rognon.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "petit-pois-viande",
+    "name": "Petit pois viande",
+    "category": "Spaghetti",
+    "price": 1500,
+    "description": "Petit pois à la viande mijotée.",
+    "image": "/assets/foods/spaghetti.jpg",
+    "active": true
+  },
+  {
+    "id": "tchepe-poisson",
+    "name": "Tchèpe poisson",
+    "category": "Tchèpe",
+    "price": 500,
+    "description": "Riz façon sénégalaise au poisson.",
+    "image": "/assets/foods/tchepe.jpg",
+    "tag": "Petit prix",
+    "active": true
+  },
+  {
+    "id": "tchepe-poulet",
+    "name": "Tchèpe poulet",
+    "category": "Tchèpe",
+    "price": 1000,
+    "description": "Riz tchèpe accompagné de poulet doré.",
+    "image": "/assets/foods/tchepe.jpg",
+    "active": true
+  },
+  {
+    "id": "tchepe-poulet-xxl",
+    "name": "Tchèpe poulet XXL",
+    "category": "Tchèpe",
+    "price": 2000,
+    "description": "Une portion généreuse pour les grands appétits.",
+    "image": "/assets/foods/tchepe.jpg",
+    "tag": "XXL",
+    "active": true
+  },
+  {
+    "id": "tchepe-viande-xxl",
+    "name": "Tchèpe viande XXL",
+    "category": "Tchèpe",
+    "price": 2000,
+    "description": "Riz tchèpe à la viande tendre, grand format.",
+    "image": "/assets/foods/tchepe.jpg",
+    "tag": "XXL",
+    "active": true
+  },
+  {
+    "id": "riz-arachide",
+    "name": "Riz sauce arachide",
+    "category": "Riz aux sauces",
+    "price": 500,
+    "priceLabel": "Dès 500 FCFA",
+    "description": "Riz et sauce arachide onctueuse maison.",
+    "image": "/assets/foods/riz-sauce.jpg",
+    "note": "Prix de départ affiché sur le site officiel; confirmez les options disponibles.",
+    "active": true
+  },
+  {
+    "id": "riz-feuille",
+    "name": "Riz sauce feuille",
+    "category": "Riz aux sauces",
+    "price": 500,
+    "priceLabel": "Dès 500 FCFA",
+    "description": "Riz accompagné d’une sauce aux feuilles.",
+    "image": "/assets/foods/riz-sauce.jpg",
+    "note": "Prix de départ affiché sur le site officiel; confirmez les options disponibles.",
+    "active": true
+  },
+  {
+    "id": "riz-tomate",
+    "name": "Riz sauce tomate",
+    "category": "Riz aux sauces",
+    "price": 500,
+    "priceLabel": "Dès 500 FCFA",
+    "description": "Riz et sauce tomate relevée aux herbes.",
+    "image": "/assets/foods/riz-sauce.jpg",
+    "note": "Prix de départ affiché sur le site officiel; confirmez les options disponibles.",
+    "active": true
+  },
+  {
+    "id": "porc-2-boules",
+    "name": "Porc au four (2 boules)",
+    "category": "Porc au four",
+    "price": 1200,
+    "description": "Porc au four avec deux boules d’attiékè.",
+    "image": "/assets/foods/porc-four.jpg",
+    "active": true
+  },
+  {
+    "id": "porc-xxl",
+    "name": "Porc au four XXL",
+    "category": "Porc au four",
+    "price": 2000,
+    "description": "Portion XXL généreuse avec attiékè.",
+    "image": "/assets/foods/porc-four.jpg",
+    "tag": "XXL",
+    "active": true
+  },
+  {
+    "id": "attieke-poisson-alloco",
+    "name": "Attiékè poisson alloco",
+    "category": "Attiéké",
+    "price": 1000,
+    "priceLabel": "Dès 1 000 FCFA",
+    "description": "Attiékè, poisson, alloco et condiment.",
+    "image": "/assets/foods/attieke-poisson.jpg",
+    "tag": "Favori",
+    "active": true
+  },
+  {
+    "id": "attieke-poulet-alloco",
+    "name": "Attiékè poulet alloco",
+    "category": "Attiéké",
+    "price": 1500,
+    "priceLabel": "Dès 1 500 FCFA",
+    "description": "Attiékè, poulet, alloco et condiment.",
+    "image": "/assets/foods/attieke-poisson.jpg",
+    "active": true
+  },
+  {
+    "id": "attieke-poulet",
+    "name": "Attiékè poulet",
+    "category": "Attiéké",
+    "price": 1000,
+    "priceLabel": "Dès 1 000 FCFA",
+    "description": "Attiékè, poulet et condiment maison.",
+    "image": "/assets/foods/attieke-poisson.jpg",
+    "active": true
+  },
+  {
+    "id": "garba",
+    "name": "Spécialité Garba",
+    "category": "Attiéké",
+    "price": 500,
+    "priceLabel": "Dès 500 FCFA",
+    "description": "Le garba authentique d’Abidjan.",
+    "image": "/assets/foods/attieke-poisson.jpg",
+    "active": true
+  },
+  {
+    "id": "attieke-poisson",
+    "name": "Attiékè poisson",
+    "category": "Attiéké",
+    "price": 1000,
+    "description": "Attiékè classique avec poisson grillé.",
+    "image": "/assets/foods/attieke-poisson.jpg",
+    "active": true
+  },
+  {
+    "id": "orangina",
+    "name": "Orangina",
+    "category": "Boissons & sucreries",
+    "price": 500,
+    "description": "Boisson pétillante à l’orange.",
+    "image": "/assets/foods/boissons.jpg",
+    "active": true
+  },
+  {
+    "id": "kapa",
+    "name": "Kapa",
+    "category": "Boissons & sucreries",
+    "price": 300,
+    "description": "Jus de fruits rafraîchissant.",
+    "image": "/assets/foods/boissons.jpg",
+    "tag": "Petit prix",
+    "active": true
+  },
+  {
+    "id": "codys",
+    "name": "Cody’s",
+    "category": "Boissons & sucreries",
+    "price": 500,
+    "description": "Boisson fruitée et désaltérante.",
+    "image": "/assets/foods/boissons.jpg",
+    "active": true
+  },
+  {
+    "id": "coca-50cl",
+    "name": "Coca-Cola 50 cl",
+    "category": "Boissons & sucreries",
+    "price": 500,
+    "description": "Coca-Cola classique bien frais.",
+    "image": "/assets/foods/boissons.jpg",
+    "active": true
+  },
+  {
+    "id": "coca-33cl",
+    "name": "Coca-Cola 33 cl",
+    "category": "Boissons & sucreries",
+    "price": 300,
+    "description": "Format canette bien frais.",
+    "image": "/assets/foods/boissons.jpg",
+    "active": true
+  }
+]

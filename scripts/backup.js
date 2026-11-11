@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const dbFile=path.resolve(process.env.DB_PATH||path.join(ROOT,'data','groupe-express.db'));
+process.env.DB_PATH=dbFile;
+const {db}=await import('../server.js');
+const dir=path.join(path.dirname(dbFile),'backups');fs.mkdirSync(dir,{recursive:true});
+const stamp=new Date().toISOString().replace(/[:.]/g,'-');
+const f=path.join(dir,'ge-manual-'+stamp+'.db');
+db.exec(`VACUUM INTO '${f.replace(/'/g,"''")}'`);
+const uploads=path.join(ROOT,'public','uploads');if(fs.existsSync(uploads))fs.cpSync(uploads,path.join(dir,'ge-manual-'+stamp+'-uploads'),{recursive:true});
+console.log('Sauvegarde créée :',f);db.close();

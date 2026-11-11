@@ -1,0 +1,10 @@
+GROUPE EXPRESS PWA V18.6.9 — GESTION DES CATÉGORIES DE PLATS ET CATALOGUE
+
+- Pastilles de couleur de la boutique électronique : conservation des couleurs HEX définies en administration et affichage rempli côté client.
+- Plats & stocks séparé en deux espaces : Ajouter un plat et Catalogue et inventaire.
+- Création indépendante des catégories de plats avec photo d’icône depuis l’appareil et aperçu.
+- Changement d’icône d’une catégorie existante. Les icônes sont synchronisées avec les catégories côté client.
+- Catalogue détaillé avec catégories, nombre de plats associés, stock, prix et actions par plat.
+- Suppression d’une catégorie avec confirmation renforcée et suppression transactionnelle des plats associés.
+- Formulaire Ajouter un plat conservant tous les champs demandés.
+- Vérifications syntaxiques et tests de non-régression.

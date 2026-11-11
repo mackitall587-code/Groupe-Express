@@ -1,0 +1,15 @@
+GROUPE EXPRESS V18.7.0 — NOTIFICATIONS, FIDÉLITÉ ET PANIER
+
+- Ajout des photos des plats dans les lignes de commande enregistrées et dans le panier, avec fallback visuel.
+- Pastilles de couleurs électroniques rendues par un remplissage CSS explicite et une bordure de sélection; la couleur de variante est aussi restituée dans l’historique.
+- Activation Web Push depuis le profil ou la page Notifications : permission navigateur, abonnement Service Worker et enregistrement côté serveur.
+- Notification en boîte de réception pour chaque nouveau plat ou produit ajouté; Web Push envoyé aux appareils abonnés si VAPID est configuré.
+- Après 5 commandes effectivement retirées sur 7 jours, création unique de l’avantage fidélité, message client et Web Push si configuré.
+- Carte fidélité visuelle avec identifiant membre, 5 tampons et état d’éligibilité.
+- Générateur local de clés VAPID : npm run vapid:generate.
+
+CONFIGURATION EXTERNE OBLIGATOIRE
+- Web Push : générer les clés VAPID, les ajouter au .env, déployer en HTTPS; chaque client doit autoriser les notifications sur son appareil.
+- Assistant IA : renseigner OPENAI_API_KEY dans .env. Le code d’intégration existant utilise OPENAI_MODEL et OPENAI_BASE_URL.
+- WhatsApp Cloud API : renseigner WHATSAPP_ACCESS_TOKEN, WHATSAPP_PHONE_NUMBER_ID, WHATSAPP_WEBHOOK_VERIFY_TOKEN et WHATSAPP_APP_SECRET depuis Meta Developers; configurer l’URL webhook publique HTTPS.
+Aucun secret n’est inclus dans cette archive.

@@ -1,0 +1,23 @@
+GROUPE EXPRESS V18.6.6 — CORRECTIONS SUPPLÉMENTAIRES
+
+- Correction commune des requêtes de suppression : les méthodes DELETE envoient maintenant Content-Type: application/json et un corps JSON vide, conformément au contrôle serveur.
+- Correction de l’empilement CSS de la bannière électronique : le sélecteur historique du premier enfant ne peut plus réduire/masquer le conteneur des images.
+- Galerie produit dédoublonnée entre la photo principale et les angles supplémentaires.
+- Catégories électroniques enregistrées dès la publication d’un produit, avec gestion dédiée de leur icône individuelle.
+- Les catégories existantes sont réutilisables ; une catégorie et son icône peuvent être ajoutées depuis l’administration.
+- Codes HEX renseignés automatiquement à partir des noms de couleurs reconnus.
+- Panier électronique : photo de la variante sélectionnée, couleur, stock disponible, quantité et total par ligne.
+- Panier commun : affichage détaillé des articles électroniques en plus des plats.
+- Suppression des fausses notes statiques 4,9/5 et 2,5k avis ; aucun avis fictif n’est affiché.
+- Les notifications client n’affichent plus les anciennes notifications locales de préparation/retrait. Le centre affiche les messages serveur (message de bienvenue unique à l’inscription et messages explicitement envoyés par l’administration).
+- Arrêt du minuteur de bannière lors du changement de page pour éviter les cycles concurrents.
+- La diffusion SSE existante continue de notifier les deux espaces après chaque mutation serveur.
+
+Tests : npm test — 101 réussis, 0 échoué avant les tests complémentaires V18.6.6.
+- Avis par produit : les clients peuvent sélectionner un plat ou un produit électronique lors du dépôt d’un avis ; les notes et nombres d’avis sont calculés séparément à partir des avis approuvés, sans étoiles fictives.
+- L’édition d’un produit conserve les URL déjà enregistrées pour les angles et les photos de couleurs au lieu de les traiter à tort comme de nouvelles images base64.
+- Nettoyage des anciennes notifications automatiques « Votre commande est prête ! » et dédoublonnage du message de bienvenue historique par compte ; les messages de l’équipe sont conservés.
+- Validation finale : `npm test` — 117 réussis, 0 échoué.
+- Commandes électroniques : l’image de la couleur sélectionnée est conservée dans l’historique et transmise à l’administration.
+- Suppression de catégorie électronique ajoutée dans l’administration ; le serveur bloque la suppression tant que des produits y sont rattachés.
+- Validation finale après ces ajouts : `npm test` — 117 réussis, 0 échoué.

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F04435">
+<meta name="description" content="Commande tes repas Groupe Express à Abidjan et récupère-les au point de retrait.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/assets/groupe-express-logo-mark.png" type="image/png">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<link rel="stylesheet" href="/styles.css?v=18.7.0">
+<link rel="stylesheet" href="/splash.css?v=18.7.0">
+<title>GROUPE EXPRESS — La pause a meilleur goût</title>
+</head>
+<body>
+<div id="gxStartup" class="gx-startup" role="status" aria-label="Chargement">
+  <div class="gx-startup-content">
+    <div class="gx-startup-emblem" aria-hidden="true"><span class="gx-ring gx-ring-one"></span><span class="gx-ring gx-ring-two"></span><span class="gx-logo-halo"></span><img src="/assets/groupe-express-logo-mark.png" alt="" width="112" height="112"></div>
+    <div class="gx-startup-name"><span>GROUPE</span> <strong>EXPRESS</strong></div>
+    <p class="gx-startup-caption">LA PAUSE A MEILLEUR GOÛT</p>
+    <div class="gx-progress-track"><span class="gx-progress-bar"></span></div>
+  </div>
+</div>
+<div class="topbar"><span>Le goût qui rassemble · Abidjan</span><a id="sosLink" href="tel:+2250719480884">Assistance 07 19 48 08 84</a></div>
+<header class="header">
+  <a class="brand" href="#/"><img src="/assets/groupe-express-logo-mark.png" alt="GROUPE EXPRESS" width="78" height="38"><span><b>GROUPE</b><i>EXPRESS</i></span></a>
+  <nav class="nav" aria-label="Navigation">
+    <a href="#/" data-nav="">Menu</a><a href="#/electronique" data-nav="electronique">Électronique</a><a href="#/avis" data-nav="avis">Avis</a><a href="#/commandes" data-nav="commandes">Mes commandes</a><a href="#/notifications" data-nav="notifications">Notifications</a><a href="#/compte" data-nav="compte">Mon compte</a><a href="#/admin" data-nav="admin" id="adminLink" hidden>Équipe</a>
+  </nav>
+  <div class="header-actions"><button id="installBtn" class="btn btn-ghost" hidden>Installer l’app</button><a class="notify-btn" href="#/notifications" aria-label="Notifications">♧<i class="notification-count" hidden>0</i></a><a class="cart-btn" href="#/panier" aria-label="Panier">🛒 <b id="cartCount">0</b></a></div>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="footer"><div><b>GROUPE EXPRESS</b> · UTT Loko, Abidjan</div><div><a href="#/infos/cgu">Conditions</a> · <a href="#/infos/confidentialite">Confidentialité</a> · <a href="#/infos/contact">Contact</a> · <a href="#/avis">Avis clients</a> · <a href="#/electronique">Boutique électronique</a></div></footer>
+<nav class="bottom-nav" aria-label="Navigation principale"><a href="#/" data-nav=""><b>⌂</b><span>Accueil</span></a><a href="#/commandes" data-nav="commandes"><b>▤</b><span>Commandes</span></a><a href="#/panier" data-nav="panier"><b class="bottom-cart-icon">🛒 <i id="cartCountMobile">0</i></b><span>Panier</span></a><a href="#/compte" data-nav="compte"><b>♙</b><span>Profil</span></a></nav>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/splash.js" defer></script>
+<script src="/app.js?v=18.7.0" defer></script>
+</body>
+</html>

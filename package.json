@@ -1,0 +1,19 @@
+{
+  "name": "groupe-express-pwa",
+  "version": "18.7.0",
+  "private": true,
+  "type": "module",
+  "description": "GROUPE EXPRESS V18.7.0 — Web Push, nouveautés, fidélité et panier corrigé",
+  "scripts": {
+    "start": "node server.js",
+    "backup": "node scripts/backup.js",
+    "test": "node scripts/smoke-test.js",
+    "vapid:generate": "node scripts/generate-vapid-keys.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}

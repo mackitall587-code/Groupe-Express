@@ -1,0 +1,23 @@
+GROUPE EXPRESS PWA V18.6.8 — CORRECTIONS PANIER, COMMANDES ET ADMINISTRATION
+
+Corrections client :
+- Pastilles de couleurs électroniques avec remplissage HEX visible, même avec les styles globaux.
+- Ajout d'un produit électronique puis retour à la boutique sans vider le panier, pour permettre d'ajouter plusieurs produits.
+- Panier général unifié et plus lisible : sections restauration et électronique, photos, variantes, quantités, sous-totaux et actions adaptées.
+- Historique « Mes commandes » avec fiches détaillées, photos, couleur, quantité, prix unitaire, sous-total et total.
+- Une seule barre de recherche sur la page d'accueil électronique.
+
+Corrections administration :
+- Icône ajoutée au bouton Commandes.
+- Détails visuels des lignes de commandes restauration dans l'administration.
+- Gestion des catégories électroniques intégrée au formulaire « Ajouter un produit ».
+- Pour une catégorie déjà enregistrée, son icône est réutilisée et aucune nouvelle image d'icône n'est demandée.
+- Pour une nouvelle catégorie, le formulaire demande son icône individuelle; l'administration permet aussi de créer ou mettre à jour une catégorie depuis le même espace.
+- Les modifications continuent d'être diffusées entre l'administration et la boutique via les événements temps réel existants.
+
+Vérifications :
+- Syntaxe JavaScript vérifiée.
+- Tests API multi-produits électroniques et commandes administrateur ajoutés.
+- Tests automatisés : 130 réussis, 0 échoué.
+
+Important : les tests automatisés ne remplacent pas le contrôle visuel dans un navigateur réel et sur téléphone.

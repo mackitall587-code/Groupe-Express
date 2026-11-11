@@ -1,0 +1,42 @@
+GROUPE EXPRESS PWA V18.6.7 — BOUTIQUE ÉLECTRONIQUE ET PANIER PROFESSIONNELS
+
+Base : V18.6.6-CORRECTIONS
+
+CORRECTIONS ET AMÉLIORATIONS
+- Correction du routage des catégories électroniques : le nom de la catégorie est maintenant lu depuis le bon segment de l’URL.
+- Filtrage des produits par catégorie, sans sensibilité à la casse ni aux espaces périphériques.
+- Les produits actifs restent visibles dans leur catégorie même lorsque le stock est à zéro ; leur achat est désactivé et le statut de rupture est affiché.
+- Le panier électronique possède une page dédiée, distincte du panier restauration, avec un lien pour continuer les achats.
+- Ajout de plusieurs produits et variantes au même panier ; les lignes de couleurs différentes restent distinctes.
+- Quantités limitées au stock disponible et au plafond de commande existant.
+- Présentation du panier : photo, nom, prix unitaire, couleur, stock, quantité, sous-total par ligne et total général.
+- Les pastilles de couleurs sont remplies avec leur véritable code HEX ; lorsqu’une variante n’a pas de photo, la photo principale du produit est utilisée.
+- Refonte de la page d’accueil électronique : en-tête boutique, bannière, recherche, catégories illustrées, sélection de produits, catalogue et tri par prix/nom.
+- Amélioration de la présentation des commandes électroniques dans l’administration et dans le suivi client.
+- Version serveur, cache PWA et console admin mis à jour en 18.6.7.
+
+FONCTIONNALITÉS DES 10 AXES CONSERVÉES DE LA VERSION PRÉCÉDENTE
+1. Sécurité : connexion, rôles client/administrateur et protections serveur déjà présentes.
+2. Commandes : statuts, historique, impression et commandes électroniques multi-articles.
+3. Paiements : choix Mobile Money et paiement au retrait déjà proposés ; les transactions Mobile Money restent à confirmer manuellement.
+4. Livraison : gestion des points de retrait existante. L’affectation à des livreurs et le suivi GPS ne sont pas encore activés.
+5. Expérience client : profil, favoris, historique et avis.
+6. Catalogue : catégories, photos, galeries, variantes, stock et notes.
+7. Statistiques : tableau de bord et tendances de ventes existants.
+8. Notifications : messages d’administration, accueil unique et infrastructure PWA existants.
+9. Marketing : promotions, fidélité et cadeaux existants.
+10. PWA/performance : service workers, installation et synchronisation existants.
+
+INTÉGRATIONS À FINALISER AVANT UNE MISE EN PRODUCTION COMPLÈTE
+- Paiements automatiques Orange Money, MTN, Moov et Wave : nécessitent les accès marchands, clés API et validation des prestataires.
+- Gestion des livreurs et suivi de livraison : nécessite de définir les zones, tarifs, comptes livreurs et règles d’affectation.
+
+VALIDATION
+- node --check : server.js, public/app.js, public/admin-panel/admin.js, public/sw.js, public/admin-panel/sw.js, scripts/smoke-test.js.
+- npm test : 123 réussis, 0 échoué.
+- Les tests couvrent l’API et les contrôles automatisés ; une vérification visuelle sur navigateur et appareil réel reste à faire après installation.
+
+SÉCURITÉ DES DONNÉES
+- Cette archive contient l’application et les fichiers publics fournis dans la V18.6.6.
+- Elle ne contient pas la base de données active de l’utilisateur ni son fichier .env privé.
+- Sauvegarder le dossier de production avant installation ; conserver data, .env et les nouveaux fichiers public/uploads.

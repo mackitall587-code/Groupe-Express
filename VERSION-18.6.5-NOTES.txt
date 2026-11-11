@@ -1,0 +1,27 @@
+GROUPE EXPRESS V18.6.5 — CORRECTIONS ET-COMMERCE / COMMANDES
+
+Corrections intégrées sur la base V18.6.4 :
+- Les photos des plats sont conservées dans le détail des commandes (instantané de l'article au moment de la commande).
+- L'historique des commandes électroniques renvoie la photo et la couleur choisie.
+- Le client peut annuler une commande électronique encore en attente ; le stock est restitué dans une transaction SQLite.
+- L'annulation administrative des commandes électroniques est transactionnelle et la restitution du stock est protégée contre les erreurs.
+- Le formulaire d'ajout électronique est réinitialisé après publication et reste ouvert pour permettre l'ajout du produit suivant.
+- Les formulaires « Ajouter un point de retrait » et « Ajouter une commande manuellement » sont ouverts par deux boutons dédiés.
+- Le formulaire de commande manuelle est relié à l'API et transmet les articles aux fournisseurs associés.
+- Les points de retrait peuvent être désactivés/réactivés ; seuls les points actifs sont proposés aux clients. La suppression reste disponible.
+- Les commandes fournisseurs en brouillon/échec/en attente peuvent être transmises manuellement par WhatsApp depuis l'administration, sous réserve de configurer l'API WhatsApp Business.
+- Suppression d'un plat en transaction SQLite avec nettoyage prudent de la photo si elle n'est plus référencée.
+- Numéro de version serveur et interface admin mis à 18.6.5.
+
+Tests : npm test — 101 réussis, 0 échoué.
+Vérifications syntaxiques : server.js, public/app.js, public/admin-panel/admin.js, scripts/smoke-test.js.
+
+Installation :
+1. Extraire le ZIP.
+2. Ouvrir PowerShell dans ge_work.
+3. Exécuter npm start.
+4. Ouvrir http://localhost:3000.
+
+Conserver le dossier data/ de l'installation précédente pour garder la base SQLite et les données locales. Ne pas remplacer .env par .env.example ; reporter les paramètres existants dans le nouveau dossier.
+
+WhatsApp fournisseurs : nécessite WHATSAPP_ACCESS_TOKEN, WHATSAPP_PHONE_NUMBER_ID et la configuration Meta WhatsApp Cloud API dans .env. Sans ces paramètres, l'application conserve la demande et signale que l'envoi n'est pas configuré.
